@@ -21,7 +21,8 @@
  
 # API Endpoints:
 1. /allDapps
-API Response
+
+- API Response
 ```
  { statusCode: 200,
     Items:[
@@ -43,7 +44,8 @@ API Response
 }
 ```
 2. /createDapp
-Parameter
+
+- Parameter
 ```
         {
             "app_name":"DeFi Swap",
@@ -52,7 +54,7 @@ Parameter
         } 
 ```
         
-Response:
+- Response:
 ```
 {
     statusCode: 200,
