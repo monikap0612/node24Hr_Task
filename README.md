@@ -24,17 +24,52 @@
     -server.js
 
 # JSON:
- [
+ 
+
+# API Endpoints:
+
+1. /allDapps
+
+API Response
+
+- { statusCode: 200,
+    Items:[
         {
             "app_id":1,
+            "img":"",
             "app_name":"DeFi Swap",
             "description":"Swap your digital assets",
             "total_users":"200",
         },
         {
             "app_id":2,
+            "img":"",
             "app_name":"Doc sign",
             "description":"sign contract seamleassly",
             "total_users":"1K",
         },
 ]
+}
+
+
+2. /createDapp
+Parameter
+        {
+            "app_name":"DeFi Swap",
+            "description":"Swap your digital assets",
+            "total_users":"200",
+        }
+        
+
+
+Response:
+{
+    statusCode: 200,
+    Items:{
+            "app_name":"DeFi Swap",
+            "description":"Swap your digital assets",
+            "total_users":"200",
+        }
+
+}
+

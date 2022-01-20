@@ -3,10 +3,10 @@ module.exports = app =>{
     var router = require("express").Router();
     
     // Create a new Tutorial
-    router.post("/create", dApps.create);
+    router.post("/createDapp", dApps.create);
 
   // Retrieve all Tutorials
-    router.get("/AllDapps",dApps.get);
+    router.get("/allDapps",dApps.get);
 
     app.use('/api', router);
 }
